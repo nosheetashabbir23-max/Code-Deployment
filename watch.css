@@ -136,15 +136,6 @@ article::before {
     border-top-right-radius: 20px;
 }
 
-article img {
-    border-radius: 15px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 article img:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
