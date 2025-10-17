@@ -273,6 +273,11 @@ footer {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-h2{
-    text-align: center;
+#content article img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
