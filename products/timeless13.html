@@ -2,143 +2,206 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeless Together</title>
-    <link rel="stylesheet" href="watch.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless Together - WatchWave</title>
+  <link rel="stylesheet" href="watch.css">
+  
+  <style>
+    .product-page-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image-gallery {
+      flex: 1;
+      min-width: 350px;
+    }
+
+    .product-image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .product-info-details {
+      flex: 1;
+      min-width: 350px;
+    }
+
+    .product-info-details h1 {
+      font-size: 2.8rem;
+      color: #0d1b2a;
+      margin-bottom: 0.5rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .product-info-details .short-description {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-info-details .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0d1b2a;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-info-details .add-to-cart {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .product-specs h3 {
+      color: #0d1b2a;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+
+    .product-specs p,
+    .product-specs ul {
+      color: #333;
+      line-height: 1.8;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .product-specs li {
+      margin-bottom: 0.5rem;
+    }
+
+    .back-link-wrapper {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .back-link {
+      background-color: #0d1b2a;
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #344966;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
+  <nav>
+    <ul>
+      <img src="picture/ChatGPT Image Aug 28, 2025, 08_31_42 AM.png" alt="logo" height="50px" width="50px">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="career.html">Career</a>
+      <a href="faq.html">FAQ</a>
+      <a href="product 1.html">Products</a>
+    </ul>
+  </nav>
 
-    <nav>
-        <ul>
-            <img src="picture/ChatGPT Image Aug 28, 2025, 08_31_42 AM.png" alt="logo" height="50px" width="50px">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="career.html">Career</a>
-            <a href="faq.html">FAQ</a>
-            <a href="product 1.html">Products</a>
-        </ul>
-    </nav>
+  <main>
+    <div class="product-page-container">
+      <div class="product-image-gallery">
+        <img src="picture/couple 2 3.jpeg" alt="Timeless Together Couple Watches">
+      </div>
 
-    <div id="page">
-        <header>
-            <h1>WatchWave</h1>
-            <figure>
-                <img src="picture/download.jpeg" alt="watch" width="400" height="400" />
-                <img src="picture/watch 2 cpuple.jpeg" alt="watch" width="400" height="400" />
-                <img src="picture/2 couple watch.jpeg" alt="watch" width="400" height="400" />
-            </figure>
-
-            <nav>
-                <ul>
-                    <a href="index.html">Men Formal</a>
-                    <a href="Men Sport.html">Men Sport</a>
-                    <a href="Female Fancy.html">Female Fancy</a>
-                    <a href="Couple Watches.html">Couple Watches</a>
-                    <a href="Unisex.html">Unisex</a>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <header>
+      <div class="product-info-details">
         <h1>Timeless Together</h1>
-    </header>
+        <p class="short-description">“One story, two watches.”</p>
+        <div class="price">PKR. 11,999</div>
+        <button class="add-to-cart">🛒 Add to Cart</button>
 
-    <section id="content">
-        <article>
-            <h2>Couple Watches Collection</h2>
+        <div class="product-specs">
+          <h3>Product Description</h3>
+          <p>
+            The <strong>Timeless Together</strong> set celebrates the beauty of shared moments.
+            Designed for couples who appreciate elegance and connection, this matching watch pair symbolizes
+            unity and love — two perfectly balanced timepieces that tick in harmony.
+          </p>
 
-            <figure>
-                <img src="picture/couple 2 3.jpeg" alt="Couple Watches" width="400" height="400">
-                <figcaption>Timeless Together</figcaption>
-            </figure>
+          <h3>Specifications</h3>
+          <ul>
+            <li>⏱ <strong>Movement:</strong> Dual Japanese Quartz</li>
+            <li>💎 <strong>Case Material:</strong> Polished Stainless Steel</li>
+            <li>💧 <strong>Water Resistance:</strong> 50 meters</li>
+            <li>🎨 <strong>Dial Colors:</strong> Silver (His) & Rose Gold (Hers)</li>
+            <li>🔗 <strong>Strap Type:</strong> Premium Metal Link</li>
+            <li>📏 <strong>Case Diameter:</strong> 42mm (His), 36mm (Hers)</li>
+            <li>⚖️ <strong>Weight:</strong> 155g (His), 120g (Hers)</li>
+          </ul>
 
-            <p>“One story, two watches.”</p>
+          <h3>Why You’ll Love It</h3>
+          <ul>
+            <li>✓ Perfect matching pair for couples</li>
+            <li>✓ Elegant design suitable for formal or casual wear</li>
+            <li>✓ A thoughtful gift for anniversaries or engagements</li>
+            <li>✓ Crafted for durability, comfort, and timeless beauty</li>
+          </ul>
+        </div>
 
-            <div class="product-footer">
-                <span class="price">PKR. 11,999</span>
-                <button class="add-to-cart">🛒 Add to Cart</button>
-            </div>
+        <div class="back-link-wrapper">
+          <a href="index.html" class="back-link">← Back to All Products</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-            <section class="product-details" style="margin-top: 2rem; text-align: left;">
-                <h3 style="color: #0d1b2a; margin-bottom: 0.5rem;">Product Description</h3>
-                <p style="color: #333; margin-bottom: 1rem;">
-                    The <strong>Timeless Together</strong> set celebrates the beauty of shared moments.
-                    Designed for couples who appreciate elegance and connection, this matching watch pair symbolizes
-                    unity and love —
-                    two perfectly balanced timepieces that tick in harmony.
-                </p>
-
-                <h3 style="color: #0d1b2a; margin-bottom: 0.5rem;">Specifications</h3>
-                <ul style="list-style: none; padding-left: 0; color: #333;">
-                    <li>⏱ <strong>Movement:</strong> Dual Japanese Quartz</li>
-                    <li>💎 <strong>Case Material:</strong> Polished Stainless Steel</li>
-                    <li>💧 <strong>Water Resistance:</strong> 50 meters</li>
-                    <li>🎨 <strong>Dial Colors:</strong> Silver (His) & Rose Gold (Hers)</li>
-                    <li>🔗 <strong>Strap Type:</strong> Premium Metal Link</li>
-                    <li>📏 <strong>Case Diameter:</strong> 42mm (His), 36mm (Hers)</li>
-                    <li>⚖️ <strong>Weight:</strong> 155g (His), 120g (Hers)</li>
-                </ul>
-
-                <h3 style="color: #0d1b2a; margin-top: 1.5rem;">Why You’ll Love It</h3>
-                <p style="color: #333;">
-                    ✓ Perfect matching pair for couples <br>
-                    ✓ Elegant design suitable for formal or casual wear <br>
-                    ✓ A thoughtful gift for anniversaries or engagements <br>
-                    ✓ Crafted for durability, comfort, and timeless beauty
-                </p>
-            </section>
-        </article>
+  <aside>
+    <section>
+      <h3>Shop WatchWave</h3>
+      <ul>
+        <li><a href="Shop All.html">Shop All</a></li>
+        <li><a href="Men Watches.html">Men Watches</a></li>
+        <li><a href="Ladies Watches.html">Ladies Watches</a></li>
+        <li><a href="Couple Watches.html">Couple Watches</a></li>
+        <li><a href="Term of Services.html">Term of Services</a></li>
+        <li><a href="Refund Policy.html">Refund Policy</a></li>
+      </ul>
     </section>
 
-    <div style="text-align: center; margin-top: 2rem;">
-        <a href="index.html"
-            style="background-color: #0d1b2a; color: #fff; padding: 0.8rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 600; transition: 0.3s;">
-            ← Back to All Products
-        </a>
-    </div>
+    <section>
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="Retail Policy.html">Retail Policy</a></li>
+        <li><a href="Warranty Infotmatrion.html">Warranty Information</a></li>
+        <li><a href="Shipping Modes of Payments.html">Shipping & Payments</a></li>
+        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        <li><a href="Terms of Services.html">Terms of Services</a></li>
+      </ul>
+    </section>
 
-    <aside>
-        <section>
-            <h3>Shop WatchWave</h3>
-            <ul>
-                <li><a href="Shop All.html">Shop All</a></li>
-                <li><a href="Men Watches.html">Men Watches</a></li>
-                <li><a href="Ladies Watches.html">Ladies Watches</a></li>
-                <li><a href="Couple Watches.html">Couple Watches</a></li>
-                <li><a href="Term of Services.html">Term of Services</a></li>
-                <li><a href="Refund Policy.html">Refund Policy</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3> Customer Care </h3>
-            <ul>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="Retail Policy.html">Retail Policy</a></li>
-                <li><a href="Warranty Infotmatrion.html">Warranty Infotmatrion</a></li>
-                <li><a href="Shipping Modes of Payments.html">Shipping Modes of Payments</a></li>
-                <li><a href="Privacy Policy.html">Refund Policy</a></li>
-                <li><a href="Terms of Services.html">Terms of Services</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3>About Us</h3>
-            <ul>
-                <li><a href="Our Story.html">Our Story</a></li>
-                <li><a href="Store Locator.html">Store Locator</a></li>
-            </ul>
-        </section>
-    </aside>
+    <section>
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="Our Story.html">Our Story</a></li>
+        <li><a href="Store Locator.html">Store Locator</a></li>
+      </ul>
+    </section>
+  </aside>
 
-    <footer>
-        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
-        <br>
-        © 2025 WatchWave
-    </footer>
-
+  <footer>
+    Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+    <br> © 2025 WatchWave
+  </footer>
 </body>
-
 </html>

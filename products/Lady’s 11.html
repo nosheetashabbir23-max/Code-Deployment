@@ -4,15 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lady’s Timepiece Collection</title>
+    <title>The Lady’s Timepiece Collection - WatchWave</title>
     <link rel="stylesheet" href="watch.css">
+
+    <style>
+        .product-page-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image-gallery {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .product-info-details {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-info-details h1 {
+            font-size: 2.8rem;
+            color: #a83279;
+            margin-bottom: 0.5rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .product-info-details .short-description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .product-info-details .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #a83279;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-info-details .add-to-cart {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            background-color: #a83279;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .product-info-details .add-to-cart:hover {
+            background-color: #c75a99;
+            transform: scale(1.05);
+        }
+
+        .product-specs h3 {
+            color: #a83279;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #f1c3db;
+            padding-bottom: 0.5rem;
+        }
+
+        .product-specs p,
+        .product-specs ul {
+            color: #333;
+            line-height: 1.8;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .product-specs li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link-wrapper {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .back-link {
+            background-color: #0d1b2a;
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #344966;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
 
     <nav>
         <ul>
-            <img src="picture/ChatGPT Image Aug 28, 2025, 08_31_42 AM.png" alt="logo" height="50px" width="50px">
+            <img src="picture/ChatGPT Image Aug 28, 2025, 08_31_42 AM.png" alt="WatchWave Logo" height="50px" width="50px">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -22,85 +131,53 @@
         </ul>
     </nav>
 
-    <div id="page">
-        <header>
-            <h1>WatchWave</h1>
-            <figure>
-                <img src="picture/download.jpeg" alt="watch" width="400" height="400" />
-                <img src="picture/watch 2 cpuple.jpeg" alt="watch" width="400" height="400" />
-                <img src="picture/2 couple watch.jpeg" alt="watch" width="400" height="400" />
-            </figure>
-
-            <nav>
-                <ul>
-                    <a href="index.html">Men Formal</a>
-                    <a href="Men Sport.html">Men Sport</a>
-                    <a href="Female Fancy.html">Female Fancy</a>
-                    <a href="Couple Watches.html">Couple Watches</a>
-                    <a href="Unisex.html">Unisex</a>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <header>
-        <h1>The Lady’s Timepiece Collection</h1>
-    </header>
-
-    <section id="content">
-        <article>
-            <h2>Women’s Signature Collection</h2>
-
-            <figure>
-                <img src="picture/download.jpeg 2.jpeg" alt="Women's Elegant Watch" width="400" height="400">
-                <figcaption>The Lady’s Timepiece Collection</figcaption>
-            </figure>
-
-            <p>“Your wrist, your statement.”</p>
-
-            <div class="product-footer">
-                <span class="price">PKR. 7,000</span>
-                <button class="add-to-cart">🛒 Add to Cart</button>
+    <main>
+        <div class="product-page-container">
+            <div class="product-image-gallery">
+                <img src="picture/download.jpeg 2.jpeg" alt="The Lady’s Timepiece Collection Watch">
             </div>
 
-            <section class="product-details" style="margin-top: 2rem; text-align: left;">
-                <h3 style="color: #a83279; margin-bottom: 0.5rem;">Product Description</h3>
-                <p style="color: #333; margin-bottom: 1rem;">
-                    The <strong>Lady’s Timepiece Collection</strong> celebrates elegance, independence, and modern
-                    charm.
-                    Its sleek dial and polished strap blend seamlessly to create a statement accessory that complements
-                    every outfit —
-                    from casual chic to formal grace.
-                </p>
+            <div class="product-info-details">
+                <h1>The Lady’s Timepiece Collection</h1>
+                <p class="short-description">“Your wrist, your statement.”</p>
 
-                <h3 style="color: #a83279; margin-bottom: 0.5rem;">Specifications</h3>
-                <ul style="list-style: none; padding-left: 0; color: #333;">
-                    <li>⏱ <strong>Movement:</strong> Quartz Accuracy</li>
-                    <li>💎 <strong>Case Material:</strong> Polished Stainless Steel</li>
-                    <li>💧 <strong>Water Resistance:</strong> 30 meters</li>
-                    <li>🎨 <strong>Dial Color:</strong> Pearl White</li>
-                    <li>🔗 <strong>Strap Type:</strong> Leather Strap</li>
-                    <li>📏 <strong>Case Diameter:</strong> 36mm</li>
-                    <li>⚖️ <strong>Weight:</strong> 110g</li>
-                </ul>
+                <div class="price">PKR. 7,000</div>
+                <button class="add-to-cart">🛒 Add to Cart</button>
 
-                <h3 style="color: #a83279; margin-top: 1.5rem;">Why You’ll Love It</h3>
-                <p style="color: #333;">
-                    ✓ Elegant design perfect for daily wear <br>
-                    ✓ Comfortable and lightweight feel <br>
-                    ✓ Pairs beautifully with both western and eastern wear <br>
-                    ✓ A thoughtful gift for confident, stylish women
-                </p>
-            </section>
-        </article>
-    </section>
+                <div class="product-specs">
+                    <h3>Product Description</h3>
+                    <p>
+                        The <strong>Lady’s Timepiece Collection</strong> celebrates elegance, independence, and modern
+                        charm. Its sleek dial and polished strap blend seamlessly to create a statement accessory that
+                        complements every outfit — from casual chic to formal grace.
+                    </p>
 
-    <div style="text-align: center; margin-top: 2rem;">
-        <a href="index.html"
-            style="background-color: #0d1b2a; color: #fff; padding: 0.8rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 600; transition: 0.3s;">
-            ← Back to All Products
-        </a>
-    </div>
+                    <h3>Specifications</h3>
+                    <ul>
+                        <li>⏱ <strong>Movement:</strong> Quartz Accuracy</li>
+                        <li>💎 <strong>Case Material:</strong> Polished Stainless Steel</li>
+                        <li>💧 <strong>Water Resistance:</strong> 30 meters</li>
+                        <li>🎨 <strong>Dial Color:</strong> Pearl White</li>
+                        <li>🔗 <strong>Strap Type:</strong> Leather Strap</li>
+                        <li>📏 <strong>Case Diameter:</strong> 36mm</li>
+                        <li>⚖️ <strong>Weight:</strong> 110g</li>
+                    </ul>
+
+                    <h3>Why You’ll Love It</h3>
+                    <ul>
+                        <li>✓ Elegant design perfect for daily wear</li>
+                        <li>✓ Comfortable and lightweight feel</li>
+                        <li>✓ Pairs beautifully with both western and eastern wear</li>
+                        <li>✓ A thoughtful gift for confident, stylish women</li>
+                    </ul>
+                </div>
+
+                <div class="back-link-wrapper">
+                    <a href="index.html" class="back-link">← Back to All Products</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <aside>
         <section>
@@ -114,17 +191,19 @@
                 <li><a href="Refund Policy.html">Refund Policy</a></li>
             </ul>
         </section>
+
         <section>
-            <h3> Customer Care </h3>
+            <h3>Customer Care</h3>
             <ul>
                 <li><a href="Contact Us.html">Contact Us</a></li>
                 <li><a href="Retail Policy.html">Retail Policy</a></li>
-                <li><a href="Warranty Infotmatrion.html">Warranty Infotmatrion</a></li>
-                <li><a href="Shipping Modes of Payments.html">Shipping Modes of Payments</a></li>
-                <li><a href="Privacy Policy.html">Refund Policy</a></li>
+                <li><a href="Warranty Infotmatrion.html">Warranty Information</a></li>
+                <li><a href="Shipping Modes of Payments.html">Shipping & Payments</a></li>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
                 <li><a href="Terms of Services.html">Terms of Services</a></li>
             </ul>
         </section>
+
         <section>
             <h3>About Us</h3>
             <ul>
