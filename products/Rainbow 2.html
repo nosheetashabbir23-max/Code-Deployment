@@ -4,8 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainbow Spark Edition</title>
+    <title>Rainbow Spark Edition - WatchWave</title>
     <link rel="stylesheet" href="watch.css">
+    
+    <style>
+        .product-page-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image-gallery {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .product-info-details {
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .product-info-details h1 {
+            font-size: 2.8rem;
+            color: #0d1b2a;
+            margin-bottom: 0.5rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .product-info-details .short-description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-info-details .price {
+            font-size: 2rem; /* Made price larger for emphasis */
+            font-weight: 700;
+            color: #0d1b2a;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-info-details .add-to-cart {
+            width: 100%; /* Make button take full width */
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .product-specs h3 {
+            color: #0d1b2a;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+
+        .product-specs p,
+        .product-specs ul {
+            color: #333;
+            line-height: 1.8;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .product-specs li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-specs table {
+            width: 100%; 
+            margin-top: 1rem; 
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .product-specs table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-specs table tr td:first-child {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .back-link-wrapper {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .back-link {
+            background-color: #0d1b2a;
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #344966;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 
 <body>
@@ -21,106 +135,72 @@
             <a href="product 1.html">Products</a>
         </ul>
     </nav>
-
-    <div id="page">
-        <header>
-            <h1>WatchWave</h1>
-            <figure>
-                <img src="picture/download.jpeg" alt="watch" width="400" height="400" />
-                <img src="picture/watch 2 cpuple.jpeg" alt="watch" width="400" height="400" />
-                <img src="picture/2 couple watch.jpeg" alt="watch" width="400" height="400" />
-            </figure>
-
-            <nav>
-                <ul>
-                    <a href="index.html">Men Formal</a>
-                    <a href="Men Sport.html">Men Sport</a>
-                    <a href="Female Fancy.html">Female Fancy</a>
-                    <a href="Couple Watches.html">Couple Watches</a>
-                    <a href="Unisex.html">Unisex</a>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <header>
-        <h1>Rainbow Spark Edition</h1>
-    </header>
-
-    <main id="content">
-        <article>
-            <figure>
-                <img src="picture/female.jpeg" alt="female watch" width="400" height="350">
-                <figcaption>Rainbow Spark Edition</figcaption>
-            </figure>
-
-            <p>“One watch, endless colors of confidence.”</p>
-
-            <div class="product-footer">
-                <span class="price">PKR. 10,999</span>
-                <button class="add-to-cart" onclick="addToCart()">🛒 Add to Cart</button>
+    
+    <main>
+        <div class="product-page-container">
+            <div class="product-image-gallery">
+                <img src="picture/female.jpeg" alt="Rainbow Spark Edition Watch">
             </div>
 
-            <section style="margin-top: 1.5rem; text-align: left;">
-                <h3 style="color:#0d1b2a; border-bottom: 2px solid #86a8e7; padding-bottom: 0.5rem;">Product Description
-                </h3>
-                <p style="margin-top: 0.8rem;">
-                    The <strong>Rainbow Spark Edition</strong> is designed for women who love to express their
-                    individuality.
-                    With its multi-tone dial and premium leather strap, this watch radiates positivity and charm.
-                    Whether for work, travel, or parties, it perfectly balances elegance and energy.
+            <div class="product-info-details">
+                <h1>Rainbow Spark Edition</h1>
+                <p class="short-description">
+                    “One watch, endless colors of confidence.”
                 </p>
+                <div class="price">PKR. 10,999</div>
+                <button class="add-to-cart">🛒 Add to Cart</button>
 
-                <ul style="margin-top: 1rem; margin-left: 1.5rem; list-style: square;">
-                    <li>Vibrant rainbow metallic dial</li>
-                    <li>Water-resistant up to 50 meters</li>
-                    <li>Scratch-resistant mineral glass</li>
-                    <li>Soft genuine leather strap</li>
-                    <li>Japanese Quartz movement</li>
-                    <li>1-year warranty included</li>
-                </ul>
-            </section>
+                <div class="product-specs">
+                    <h3>Product Description</h3>
+                    <p>
+                        The <strong>Rainbow Spark Edition</strong> is designed for women who love to express their individuality. With its multi-tone dial and premium leather strap, this watch radiates positivity and charm. Whether for work, travel, or parties, it perfectly balances elegance and energy.
+                    </p>
+                    <ul>
+                        <li>✓ Vibrant rainbow metallic dial</li>
+                        <li>✓ Water-resistant up to 50 meters</li>
+                        <li>✓ Scratch-resistant mineral glass</li>
+                        <li>✓ Soft genuine leather strap</li>
+                        <li>✓ Japanese Quartz movement</li>
+                        <li>✓ 1-year warranty included</li>
+                    </ul>
 
-            <section style="margin-top: 2rem; text-align: left;">
-                <h3 style="color:#0d1b2a; border-bottom: 2px solid #86a8e7; padding-bottom: 0.5rem;">Specifications</h3>
-                <table style="width: 100%; margin-top: 1rem; border-collapse: collapse;">
-                    <tr>
-                        <td>Brand</td>
-                        <td>TimeAura</td>
-                    </tr>
-                    <tr>
-                        <td>Model</td>
-                        <td>Rainbow Spark Edition</td>
-                    </tr>
-                    <tr>
-                        <td>Dial Color</td>
-                        <td>Multi-color</td>
-                    </tr>
-                    <tr>
-                        <td>Strap Material</td>
-                        <td>Premium Leather</td>
-                    </tr>
-                    <tr>
-                        <td>Case Diameter</td>
-                        <td>36mm</td>
-                    </tr>
-                    <tr>
-                        <td>Water Resistance</td>
-                        <td>50 meters</td>
-                    </tr>
-                    <tr>
-                        <td>Warranty</td>
-                        <td>1 Year</td>
-                    </tr>
-                </table>
-            </section>
-        </article>
+                    <h3>Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>Brand</td>
+                            <td>TimeAura</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>Rainbow Spark Edition</td>
+                        </tr>
+                        <tr>
+                            <td>Dial Color</td>
+                            <td>Multi-color</td>
+                        </tr>
+                        <tr>
+                            <td>Strap Material</td>
+                            <td>Premium Leather</td>
+                        </tr>
+                        <tr>
+                            <td>Case Diameter</td>
+                            <td>36mm</td>
+                        </tr>
+                        <tr>
+                            <td>Water Resistance</td>
+                            <td>50 meters</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>1 Year</td>
+                        </tr>
+                    </table>
+                </div>
 
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="index.html"
-                style="background-color: #0d1b2a; color: #fff; padding: 0.8rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 600; transition: 0.3s;">
-                ← Back to All Products
-            </a>
+                <div class="back-link-wrapper">
+                    <a href="index.html" class="back-link">← Back to All Products</a>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -161,7 +241,6 @@
         <br>
         © 2025 WatchWave
     </footer>
-
 
 </body>
 
